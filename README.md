@@ -18,9 +18,9 @@ Decimos que tiene 3 estados:
 
 Ejemplo de uso:
 
-´´´
+```
 HEALTHCHECK --interval=5m --timeout=3s CMD curl -f http://localhost/ || exit 1
-´´´
+```
 
 ## ONBUILD
 
@@ -29,10 +29,10 @@ La sentencia ONBUILD se ejecutara cuando la imagen que la invoque inmediatamente
 
 Ejemplos:
 
-´´´
+```
 ONBUILD ADD . /app/src
 ONBUILD RUN /usr/local/bin/python-build --dir /app/src
-´´´
+```
 
 ## VOLUME
 
